@@ -28,4 +28,10 @@ public class DemoController {
     public String hello(@PathVariable(value = "id") Long id) {
         return Optional.ofNullable(demoService.getDemoById(id)).map(Demo::toString).orElse("empty String");
     }
+
+    @RequestMapping("/demo/hello/{id}")
+    @ResponseBody
+    public String test() {
+
+    }
 }
