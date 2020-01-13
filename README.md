@@ -5,6 +5,9 @@ SpringBoot2 启动流程
     配置primarySources
     应用环境检测
     系统初始化器
+        （上下文刷新即refresh方法调用前，
+        用来编码设置一些属性变量通常用在web环境中，
+        可以通过order接口排序）
     配置监听器
     配置main方法所在类
 
