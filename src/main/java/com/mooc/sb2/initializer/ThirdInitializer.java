@@ -14,7 +14,7 @@ import java.util.Map;
  * @Description:
  * @Date: Create in 16:16 2020/1/10
  */
-@Order(2)
+@Order(3)
 public class ThirdInitializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
