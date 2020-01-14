@@ -1,13 +1,27 @@
 package com.mooc.sb2;
 
+import com.mooc.sb2.event.WeatherRunListenter;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@RunWith(SpringRunner.class)
 @SpringBootTest
-class Sb2ApplicationTests {
+public class Sb2ApplicationTests {
+
+    @Autowired
+    private WeatherRunListenter weatherRunListenter;
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
+    }
+
+    @Test
+    public void testEvent(){
+        weatherRunListenter.rain();
+        weatherRunListenter.snow();
     }
 
 }
