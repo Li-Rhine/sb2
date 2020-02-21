@@ -15,10 +15,11 @@
         </property>
     </bean>
 
-    <bean id="helloService" class="com.mooc.sb2.ioc.xml.HelloService">
-        <property name="student" ref="student"/>
-        <property name="animal" ref="cat"/>
-    </bean>
+
+    <!--<bean id="helloService" class="com.mooc.sb2.ioc.xml.HelloService">-->
+        <!--<property name="student" ref="student"/>-->
+        <!--<property name="animal" ref="cat"/>-->
+    <!--</bean>-->
 
     <bean name="animalFactory" class="com.mooc.sb2.ioc.xml.AnimalFactory"/>
     <bean id="dog" class="com.mooc.sb2.ioc.xml.AnimalFactory" factory-bean="animalFactory" factory-method="getAnimal">

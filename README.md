@@ -49,3 +49,10 @@ SpringBoot2 启动流程
     xml配置bean的常用方式： 无参构造、有参构造、静态工厂方法、实例工厂方法
     优点：低耦合、对象关系清晰、集中管理
     缺点：配置繁琐、开发效率稍低、文件解析耗时
+    
+    
+    注解配置bean的方式： @Component声明、
+                        配置类中使用@Bean、
+                        实现FactoryBean、
+                        实现BeanDefinitionRegistryPostProcessor
+                        实现ImportBeanDefinitonRegistrar
