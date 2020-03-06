@@ -56,3 +56,13 @@ SpringBoot2 启动流程
                         实现FactoryBean、
                         实现BeanDefinitionRegistryPostProcessor
                         实现ImportBeanDefinitonRegistrar
+                        
+                        
+                        
+    refresh方法解析：
+        一：bean配置读取加载入口
+        二：spring框架启动流程
+        三：面试重点
+        
+        prepareRefresh 容器状态设置、初始化属性设置、检查必备属性是否存在
+        obtainFreshBeanFactory 设置beanFactory序列化id、获取beanFactory
