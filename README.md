@@ -66,3 +66,6 @@ SpringBoot2 启动流程
         
         prepareRefresh 容器状态设置、初始化属性设置、检查必备属性是否存在
         obtainFreshBeanFactory 设置beanFactory序列化id、获取beanFactory
+        prepareBeanFactory  设置beanFactory一些属性、添加后置处理器、设置忽略的自动装配接口、注册一些组件
+        postProcessBeanFactory  子类重写以在BeanFactory完成创建后做进一步设置
+        
